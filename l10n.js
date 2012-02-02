@@ -206,6 +206,8 @@
 		}
 		while (i--);
 		
-		return this_val;
+		var returnval;
+		this_val in localizations["en"] ? returnval = localizations["en"][this_val] : returnval = this_val;
+		return returnval;
 	};
 }());
